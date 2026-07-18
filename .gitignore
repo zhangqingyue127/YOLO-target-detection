@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 原始视频和训练产物不进入 Git 仓库
+*.mp4
+*.avi
+*.mov
+runs/
+weights/
+*.pt
+*.onnx
