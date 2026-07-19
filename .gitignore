@@ -5,11 +5,17 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# 原始视频和训练产物不进入 Git 仓库
-*.mp4
-*.avi
-*.mov
+# 数据 & 虚拟环境不进入仓库
+dataset/
+venv/
+
+# 训练产物
 runs/
 weights/
 *.pt
 *.onnx
+
+# 原始视频
+*.mp4
+*.avi
+*.mov

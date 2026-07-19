@@ -1,0 +1,155 @@
+[
+  {
+    "name": "exp_v8n",
+    "desc": "YOLOv8n baseline",
+    "model": "yolov8n.pt",
+    "epochs": 100,
+    "augment": true,
+    "batch": 16,
+    "train_time_s": 1569.0,
+    "model_size_mb": 6.3,
+    "mAP50": 0.5415,
+    "mAP50_95": 0.2455,
+    "precision": 0.5895,
+    "recall": 0.494,
+    "inference_ms": 7.5,
+    "per_class_ap50": {
+      "person": 0.7582,
+      "bicycle": 0.0393,
+      "car": 0.7315,
+      "motorcycle": 0.6435,
+      "bus": 0.5349
+    }
+  },
+  {
+    "name": "exp_v8s",
+    "desc": "YOLOv8s",
+    "model": "yolov8s.pt",
+    "epochs": 100,
+    "augment": true,
+    "batch": 8,
+    "train_time_s": 2598.0,
+    "model_size_mb": 22.5,
+    "mAP50": 0.5627,
+    "mAP50_95": 0.2602,
+    "precision": 0.8131,
+    "recall": 0.5271,
+    "inference_ms": 16.0,
+    "per_class_ap50": {
+      "person": 0.7695,
+      "bicycle": 0.0669,
+      "car": 0.8441,
+      "motorcycle": 0.7446,
+      "bus": 0.3886
+    }
+  },
+  {
+    "name": "exp_v11n",
+    "desc": "YOLOv11n",
+    "model": "yolo11n.pt",
+    "epochs": 100,
+    "augment": true,
+    "batch": 16,
+    "train_time_s": 1471.0,
+    "model_size_mb": 5.5,
+    "mAP50": 0.5475,
+    "mAP50_95": 0.2561,
+    "precision": 0.7864,
+    "recall": 0.5095,
+    "inference_ms": 5.2,
+    "per_class_ap50": {
+      "person": 0.7542,
+      "bicycle": 0.011,
+      "car": 0.843,
+      "motorcycle": 0.5296,
+      "bus": 0.5995
+    }
+  },
+  {
+    "name": "exp_v11s",
+    "desc": "YOLOv11s",
+    "model": "yolo11s.pt",
+    "epochs": 100,
+    "augment": true,
+    "batch": 8,
+    "train_time_s": 2417.0,
+    "model_size_mb": 19.2,
+    "mAP50": 0.5785,
+    "mAP50_95": 0.2605,
+    "precision": 0.8756,
+    "recall": 0.5067,
+    "inference_ms": 11.4,
+    "per_class_ap50": {
+      "person": 0.7587,
+      "bicycle": 0.0104,
+      "car": 0.898,
+      "motorcycle": 0.7829,
+      "bus": 0.4425
+    }
+  },
+  {
+    "name": "exp_v8n_lr001",
+    "desc": "YOLOv8n lr0=0.001",
+    "model": "yolov8n.pt",
+    "epochs": 100,
+    "augment": true,
+    "batch": 16,
+    "train_time_s": 1273.0,
+    "model_size_mb": 6.3,
+    "mAP50": 0.5972,
+    "mAP50_95": 0.277,
+    "precision": 0.8505,
+    "recall": 0.528,
+    "inference_ms": 5.0,
+    "per_class_ap50": {
+      "person": 0.7815,
+      "bicycle": 0.2817,
+      "car": 0.9277,
+      "motorcycle": 0.5782,
+      "bus": 0.4167
+    }
+  },
+  {
+    "name": "exp_v8n_ep150",
+    "desc": "YOLOv8n 150 epochs",
+    "model": "yolov8n.pt",
+    "epochs": 150,
+    "augment": true,
+    "batch": 16,
+    "train_time_s": 1926.0,
+    "model_size_mb": 6.3,
+    "mAP50": 0.5121,
+    "mAP50_95": 0.2127,
+    "precision": 0.8464,
+    "recall": 0.4498,
+    "inference_ms": 7.3,
+    "per_class_ap50": {
+      "person": 0.7641,
+      "bicycle": 0.0028,
+      "car": 0.8083,
+      "motorcycle": 0.6076,
+      "bus": 0.3776
+    }
+  },
+  {
+    "name": "exp_v8n_ep50",
+    "desc": "YOLOv8n 50 epochs",
+    "model": "yolov8n.pt",
+    "epochs": 50,
+    "augment": true,
+    "batch": 16,
+    "model_size_mb": 6.3,
+    "mAP50": 0.5122,
+    "mAP50_95": 0.2471,
+    "precision": 0.8474,
+    "recall": 0.4426,
+    "inference_ms": 4.0,
+    "per_class_ap50": {
+      "person": 0.739,
+      "bicycle": 0.0157,
+      "car": 0.8012,
+      "motorcycle": 0.6271,
+      "bus": 0.3782
+    }
+  }
+]
