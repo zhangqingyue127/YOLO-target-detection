@@ -151,5 +151,27 @@
       "motorcycle": 0.6271,
       "bus": 0.3782
     }
+  },
+  {
+    "name": "exp_v8n_no_aug",
+    "desc": "YOLOv8n 关闭增强",
+    "model": "yolov8n.pt",
+    "epochs": 100,
+    "augment": false,
+    "batch": 16,
+    "train_time_s": 819.0,
+    "model_size_mb": 6.3,
+    "mAP50": 0.4839,
+    "mAP50_95": 0.1898,
+    "precision": 0.7342,
+    "recall": 0.3803,
+    "inference_ms": 2.3,
+    "per_class_ap50": {
+      "person": 0.7069,
+      "bicycle": 0.0061,
+      "car": 0.6466,
+      "motorcycle": 0.6346,
+      "bus": 0.4253
+    }
   }
 ]
