@@ -23,6 +23,8 @@ EXPERIMENTS = [
     # ===== 实验三：轮次 =====
     {"name": "exp_v8n_ep50",   "model": "yolov8n.pt",  "epochs": 50,  "augment": True,  "batch": 16, "desc": "YOLOv8n 50 epochs"},
     {"name": "exp_v8n_ep150",  "model": "yolov8n.pt",  "epochs": 150, "augment": True,  "batch": 16, "desc": "YOLOv8n 150 epochs"},
+    # ===== 实验四：数据增强 =====
+    {"name": "exp_v8n_no_aug", "model": "yolov8n.pt", "epochs": 100, "augment": False, "batch": 16,"desc": "YOLOv8n 关闭增强"},
 ]
 
 
@@ -133,6 +135,14 @@ def print_summary():
         if r["name"] == "exp_v8n" and "per_class_ap50" in r:
             for cls, ap in sorted(r["per_class_ap50"].items(), key=lambda x: -x[1]):
                 print(f"  {cls:15s}: {ap:.4f}")
+                
+    print("\n实验五：数据增强对比")
+    print(f"{'实验名称':<15} {'lr0':<6} {'mAP@0.5':<10} {'mAP@0.5:0.95':<14} {'Precision':<10} {'Recall':<10} {'推理(ms)':<10} {'训练(s)':<10}")
+    print("-" * 85)
+    for r in data:
+        if r["name"] in ("exp_v8n", "exp_v8n_no_aug", "exp_v8n_tuned") and "mAP50" in r:
+            lr0 = 0.01
+            print(f"{r['name']:<15} {lr0:<6.3f} {r['mAP50']:<10.4f} {r['mAP50_95']:<14.4f} {r['precision']:<10.4f} {r['recall']:<10.4f} {r['inference_ms']:<10.1f} {r['train_time_s']:<10.0f}")
 
 
 def main():
